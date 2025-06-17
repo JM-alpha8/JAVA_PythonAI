@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML 자주 쓰는 태그 예제">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 태그 종합 예제</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 40px; }
+    header, footer { background: #f0f0f0; padding: 10px; }
+    nav a { margin-right: 10px; }
+    section { margin-bottom: 30px; }
+    .highlight { color: red; font-weight: bold; }
+    table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>나의 HTML 태그 예제 페이지</h1>
+    <nav>
+      <a href="#text">텍스트</a>
+      <a href="#list">목록</a>
+      <a href="#table">테이블</a>
+      <a href="#form">폼</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="text">
+      <h2>📝 텍스트 관련 태그</h2>
+      <p>이것은 <strong>강조된</strong> 문장이고, 이것은 <em>기울어진</em> 문장입니다.</p>
+      <p>줄바꿈을 해보겠습니다.<br>이 줄은 두 번째 줄입니다.</p>
+      <p><span class="highlight">span 태그</span>는 인라인 스타일에 사용됩니다.</p>
+      <hr>
+    </section>
+
+    <section id="list">
+      <h2>📋 목록 태그</h2>
+      <h3>순서 없는 목록</h3>
+      <ul>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>체리</li>
+      </ul>
+
+      <h3>순서 있는 목록</h3>
+      <ol>
+        <li>HTML 배우기</li>
+        <li>CSS 배우기</li>
+        <li>JavaScript 배우기</li>
+      </ol>
+    </section>
+
+    <section id="image">
+      <h2>🖼 이미지 & 링크</h2>
+      <p>이미지 예시:</p>
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="예시 이미지">
+        <figcaption>150x150 예시 이미지입니다.</figcaption>
+      </figure>
+      <p>링크 예시: <a href="https://www.google.com" target="_blank">구글로 가기</a></p>
+    </section>
+
+    <section id="table">
+      <h2>📑 테이블</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>직업</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>홍길동</td>
+            <td>30</td>
+            <td>개발자</td>
+          </tr>
+          <tr>
+            <td>김영희</td>
+            <td>28</td>
+            <td>디자이너</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>🧮 폼 입력</h2>
+      <form action="/submit" method="post">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="message">메시지:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <label>성별:</label>
+        <input type="radio" id="male" name="gender" value="male"><label for="male">남성</label>
+        <input type="radio" id="female" name="gender" value="female"><label for="female">여성</label><br><br>
+
+        <label for="hobby">취미 선택:</label>
+        <select id="hobby" name="hobby">
+          <option value="reading">독서</option>
+          <option value="sports">운동</option>
+          <option value="coding">코딩</option>
+        </select><br><br>
+
+        <button type="submit">제출</button>
+      </form>
+    </section>
+
+    <section id="script">
+      <h2>⚙️ JavaScript 예제</h2>
+      <button onclick="sayHello()">클릭해서 알림보기</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 HTML 예제 페이지 | 모든 권리 보유</p>
+  </footer>
+
+  <script>
+    function sayHello() {
+      alert('안녕하세요! HTML 예제입니다.');
+    }
+  </script>
+
+</body>
+</html>
