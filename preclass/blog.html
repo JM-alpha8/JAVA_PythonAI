@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+
+<style>
+  body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+  }
+
+  header {
+    background-color: green;
+    color: white;
+    padding: 20px 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  footer {
+    background-color: blue;
+    color: yellow;
+    padding: 5px;
+    margin-top: 30px;
+  }
+
+  .mylist {
+    text-align: left;
+    align-items: left;
+  }
+
+  hr {
+    border: 1px solid black;
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap : 30px;
+    font-size: 20px;
+    color : white;
+    margin-left: 20px;
+  }
+
+  nav a {
+    color: white; /* 링크 텍스트 색상도 흰색으로 */
+  }
+
+  .boom-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px
+  }
+
+  .boom-button:hover {
+    background-color: darkred;
+  }
+  
+</style>
+
+</head>
+
+<body>
+  <header>
+    <p>All is well</p>
+    <nav>
+      <a href="#good">잘한거</a>
+      <a href="#buy">사준거</a>
+    </nav>
+  </header>
+  <h1><b>My universe the end</b></h1>
+  <h6><i>나의 3년 6개월 마침표</i></h6>
+  <div class='content'>
+    <img src="https://lh6.googleusercontent.com/proxy/SEc84Mf8KSYWP7PA5i-iuaDG9E1sBQGe12W43Fej8uW_oeSX3aykYZKwsIAXzvohPOX-Zl1y9OQedCP1xBLA-Ky6-ohAzk-ewvWXJjobkpykrmBJ">
+    <p> 행복했다. 잘 살아라.</p>
+    <a href="https://phoneppu.com/?cafe_mkt=nvs_hot04&NaPm=ct%3Dmbzwznfc%7Cci%3Db15f0a80f71765bbdd64b062755ed0c252b4aec8%7Ctr%3Dsbsh%7Csn%3D180697%7Cic%3D%7Chk%3Df77bf276c2bad6dff9c3999f452c7b7d64105297"> 마지막 선물이야 </a>
+
+    <hr>
+
+    <section id = "good">
+    <h4>내가 잘못한 것</h4>
+    <ol style="text-align: center; list-style-position: inside; margin-right: 40px;">
+      <li>널 만난 것</li>
+      <li>널 보낸 것</li>
+    </ol>
+    </section>
+    
+    <hr>
+
+    <section id = "buy">
+    <h4>내가 사준거</h4>
+    <ul style="text-align: center; list-style-position: inside; margin-right: 40px;">
+      <li>핸드백</li>
+      <li>노트북</li>
+    </ul>
+    </section>
+
+    <section>
+      <button class='boom-button' onclick="boom()">누르지 마시오</button>
+    </section>
+    
+    
+    <footer>
+      <p> 2025 HTML 예제 페이지 | 모든 권리 보유 | 개인정보처리방침 </p>
+    </footer>
+  </div>
+
+  <script>
+    function boom() {
+      alert("폭발!");
+    }
+  </script>
+  
+</body>
+</html>
